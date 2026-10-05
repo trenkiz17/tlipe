@@ -13,12 +13,12 @@
     <header class="header panel">
       <div class="brand-icon" aria-hidden="true"><svg viewBox="0 0 64 64"><rect x="9" y="7" width="46" height="51" rx="7" fill="none" stroke="currentColor" stroke-width="3"/><path d="M18 48V19h28v29M32 19v29" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="32" cy="13" r="2.5" fill="currentColor"/></svg></div>
       <div class="header-copy"><h1>Elevador <span>ESP32</span></h1><p>Controle e monitoramento via Wi-Fi</p></div>
-      <div class="connection"><div class="wifi-icon" aria-hidden="true">⌁</div><span class="connection-label"><i class="status-dot"></i><span id="connectionText">Modo simulação</span></span></div>
+      <div class="connection"><div class="wifi-icon" aria-hidden="true">⌁</div><span class="connection-label"><i class="status-dot"></i><span id="connectionText">Modo simulação</span></span></div><button type="button" id="powerButton" class="power-button" aria-pressed="true" aria-label="Desligar elevador" title="Ligar/desligar elevador"><span class="power-symbol">⏻</span><span id="powerLabel">ON</span></button>
     </header>
 
     <section class="main-grid" aria-label="Painel principal do elevador">
       <div class="left-column">
-        <article class="panel metric"><h2>Andar atual</h2><div class="metric-box"><strong id="currentFloor" aria-live="polite">3º</strong><span>andar</span></div><p id="floorDescription">Cabine no 3º andar</p></article>
+        <article class="panel metric"><h2>Andar atual</h2><div class="metric-box"><strong id="currentFloor" aria-live="polite">3º</strong><span>andar</span></div></article>
         <article class="panel metric status-panel"><h2>Status</h2><div id="statusIcon" class="giant-symbol">■</div><strong id="statusText" class="status-word">Parado</strong></article>
         <article class="panel metric destination-panel"><h2>Destino</h2><div class="metric-box destination-box"><strong id="destinationFloor">—</strong><span id="destinationSuffix">Sem chamada</span></div></article>
       </div>

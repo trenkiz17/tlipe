@@ -71,3 +71,25 @@
   .indicators { gap: 2px; }
   .sensor-rows { gap: 4px; }
 }
+
+/* Chave compacta de habilitacao da simulacao */
+.header .connection { margin-left: auto; }
+.power-button { display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap:0; flex:0 0 auto; min-width:49px; height:53px; border:1px solid #16cfae;
+  border-radius:13px; color:#041f22; background:#23e9b6; cursor:pointer;
+  box-shadow:0 0 12px #04e8ba55; font-weight:800; font-size:11px; }
+.power-symbol { font-size:25px; line-height:1.1; }
+.power-button.off { color:#f3c6c6; border-color:#a84954; background:#42202b; box-shadow:none; }
+.power-button:focus-visible { outline:3px solid white; outline-offset:2px; }
+.floor-button:disabled { opacity:.35; cursor:not-allowed; border-color:#3e536a;
+  box-shadow:none; transform:none; }
+@media (max-width:600px) {
+  .header { gap:6px; }
+  .header-copy { min-width:0; }
+  .header h1 { font-size:clamp(15px,4.4vw,21px); }
+  .header p { font-size:8px; }
+  .power-button { min-width:39px; height:40px; border-radius:9px; font-size:9px; }
+  .power-symbol { font-size:21px; }
+  .connection-label { font-size:8px; max-width:63px; }
+  .metric p { display:none; }
+}
